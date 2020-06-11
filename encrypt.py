@@ -35,16 +35,15 @@ class encrypt():
 	def add(self):
 		for i in range(self.bit - len(self.hexV)):
 			if(i == 0):
-				hexval += '1'
+				self.hexV += '1'
 			else:
-				hexval += '0'
+				self.hexV += '0'
 	def _add_enc(self,addval1,addval2):
 		for i in range(self.bit - len(self.hexV)):
 			if(i == 0):
-				hexval += addval1
+				self.hexV += addval1
 			else:
-				hexval += addval2
-		self.hexV = hexval
+				self.hexV += addval2
 	def compress(self):
 		compressed = ''
 		for i in range(self.bit):
