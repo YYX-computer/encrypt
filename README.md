@@ -1,5 +1,6 @@
 # encrypt your string!
 this lib is for encrypt
+
 for example:
 ```
 import encrypt
